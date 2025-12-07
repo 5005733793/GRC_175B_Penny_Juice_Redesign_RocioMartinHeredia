@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../CSS/mystyle.css">
+<title>Order | Penny Juice</title>
+<style>
+/* Quick CSS for thumbnails hover effect */
+.thumbnail img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.thumbnail img:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="../IMAGES/Penny_Juice_Logo_Optimized.png" alt="Penny Juice Logo">
+        </a>
+    </div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">History</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <div class="header-right">
+        <div>Free Nationwide Shipping<br>563-386-1999</div>
+        <a href="customer.html">Sign In</a> | <a href="customer.html">Cart</a>
+    </div>
+</header>
+<section style="padding:40px; display:flex; justify-content:space-between;">
+ <div style="width:40%; margin-right:150px;">
+    <img id="mainImage" src="../images/Apple_Optimized.jpg" style="width:100%; border-radius:10px;">
+    <h1 id="productName" style="font-size:2.5rem; margin-top:15px;">Apple</h1>
+    <p id="productColorFree"><span style="color:red;">★</span></p>
+    <label>Qty.</label> <select style="padding:10px; font-size:1.2rem;"> <option>1</option><option>2</option><option>3</option> </select> <br><br>
+    <button>+ Add to Cart</button>
+    <h2 style="margin-top:25px;">Flavor Description:</h2>
+    <p id="productDescription">Fresh, sweet apple juice made from 100% natural ingredients.</p>
+    <h2 style="margin-top:20px;">Product Notes:</h2>
+    <ul>
+        <li>All Products are 100% Fruit Juice Blends</li>
+        <li>1 Part Juice to 7 Parts Water</li>
+        <li>1 Case Makes 24 Gallons</li>
+        <li>Minimum Order 1 Case</li>
+    </ul>
+    <p><span style="color:red;">★</span> = Color Free</p>
+</div>
+
+<div style="width:100%; display:grid; grid-template-columns: repeat(4, auto); gap:15px;">
+    <!-- Example Thumbnail: Apple (★ applies) -->
+    <div class="thumbnail" data-image="../images/Apple_Optimized.jpg" data-name="Apple" data-desc="Fresh, sweet apple juice made from 100% natural ingredients." data-colorfree="★">
+        <img src="../images/Apple_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Apple <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Berry_Optimized.jpg" data-name="Berry" data-desc="A delicious blend of berries for a sweet and tangy flavor." data-colorfree="">
+        <img src="../IMAGES/Berry_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Berry</p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Blue_Rasberry_Optimized.jpg" data-name="Blue Raspberry" data-desc="Bright blue raspberry juice with a sweet and tart taste." data-colorfree="">
+        <img src="../IMAGES/Blue_Rasberry_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Blue Raspberry</p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Cherry_Optimized.jpg" data-name="Cherry" data-desc="Classic cherry juice with natural sweetness and vibrant flavor." data-colorfree="★">
+        <img src="../IMAGES/Cherry_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Cherry <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Citrus_Punch_Optimized.jpg" data-name="Citrus Punch" data-desc="A refreshing mix of citrus fruits for a zesty taste." data-colorfree="">
+        <img src="../IMAGES/Citrus_Punch_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Citrus Punch</p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Cran_apple_Optimized.jpg" data-name="Cran-Apple" data-desc="Cranberry and apple blend for a sweet and tart flavor." data-colorfree="">
+        <img src="../IMAGES/Cran_apple_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Cran-Apple</p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Fruit_Punch_Optimized.jpg" data-name="Fruit Punch" data-desc="Classic fruit punch bursting with tropical fruit flavors." data-colorfree="★">
+        <img src="../images/Fruit_Punch_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Fruit Punch <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Green_Watermelon_Optimized.jpg" data-name="Green Watermelon" data-desc="Sweet and juicy green watermelon flavor." data-colorfree="">
+        <img src="../images/Green_Watermelon_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Green Watermelon</p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Orange_Pineapple_Optimized.jpg" data-name="Orange Pineapple" data-desc="A tropical blend of orange and pineapple juice." data-colorfree="">
+        <img src="../images/Orange_Pineapple_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Orange Pineapple</p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Orange_Raspberry_Optimized.jpg" data-name="Orange Raspberry" data-desc="Tangy orange meets sweet raspberry in this refreshing blend." data-colorfree="★">
+        <img src="../IMAGES/Orange_Raspberry_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Orange Raspberry <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/Peach_Mango_Optimized.jpg" data-name="Peach Mango" data-desc="Sweet peach combined with tropical mango juice." data-colorfree="★">
+        <img src="../IMAGES/Peach_Mango_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Peach Mango <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Strawberry_Banana_Optimized.jpg" data-name="Strawberry Banana" data-desc="Strawberry and banana blended perfectly." data-colorfree="">
+        <img src="../images/Strawberry_Banana_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Strawberry Banana</p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Strawberry_Kiwi_Optimized.jpg" data-name="Strawberry Kiwi" data-desc="Strawberry and kiwi blend with a sweet-tart flavor." data-colorfree="">
+        <img src="../images/Strawberry_Kiwi_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Strawberry Kiwi</p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Tangerine_Optimized.jpg" data-name="Tangerine" data-desc="Sweet tangerine juice, fresh and vibrant." data-colorfree="★">
+        <img src="../images/Tangerine_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Tangerine <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../IMAGES/White_Grape_Optimized.jpg" data-name="White Grape" data-desc="Sweet white grape juice with a natural taste." data-colorfree="★">
+        <img src="../IMAGES/White_Grape_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>White Grape <span style="color:red;">★</span></p>
+    </div>
+
+    <div class="thumbnail" data-image="../images/Mix_Pitchers_Optimized.jpg" data-name="Mix Pitchers" data-desc="A mixed batch of our top flavors." data-colorfree="">
+        <img src="../images/Mix_Pitchers_Optimized.jpg" style="width:1.5in; height:1.5in; object-fit:cover; border-radius:8px;">
+        <p>Mix Pitchers</p>
+    </div>
+</div>
+</section>
+
+ <footer>
+     <div class="footer-column">
+        <h4>Address:</h4>
+        <p>Penny Juice of America</p>
+        <p>915 40th Ave</p>
+        <p>Bettendorf, IA 52722</p>
+      </div>
+      <div class="footer-column">
+        <h4>Phone:</h4>
+        <p>563-386-1999</p>
+        <h4>Fax:</h4>
+        <p>563-386-6200</p>
+      </div>
+      <div class="footer-column">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="order.html">Flavors</a></p>
+        <h4></h4>
+        <p><a href="contact.html">Contact Us</a></p>
+        <p><a href="about.html">Meet the Team</a></p>
+        <p><a href="blog.html">Blog</a></p>
+      </div>
+    <div class="footer-box">
+  <h4> Payment Methods:</h4>
+        Visa • MasterCard • Discover • PayPal<br><br>
+        <h4>Follow Us:</h4>
+        <div class="footer-icons">
+            <img src="../IMAGES/Facebook_Icon_Optimized.png">
+            <img src="../IMAGES/X_icon_Optimized.png">
+        </div>
+        <br>
+        Copyright Penny Juice 2025
+    </div>
+</footer>
+
+<script>
+// Update main product image, name, description, and ★ dynamically
+const mainImage = document.getElementById("mainImage");
+const productName = document.getElementById("productName");
+const productDesc = document.getElementById("productDescription");
+const productColorFree = document.getElementById("productColorFree");
+
+document.querySelectorAll(".thumbnail").forEach(thumbnail => {
+    thumbnail.addEventListener("click", () => {
+        mainImage.src = thumbnail.getAttribute("data-image");
+        productName.textContent = thumbnail.getAttribute("data-name");
+        productDesc.textContent = thumbnail.getAttribute("data-desc");
+
+        // Show ★ if colorfree attribute exists, otherwise empty
+        const star = thumbnail.getAttribute("data-colorfree");
+        productColorFree.textContent = star ? "★" : "";
+        if(star) productColorFree.style.color = "red";
+    });
+});
+</script>
+</body>
+</html>
