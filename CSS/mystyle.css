@@ -228,4 +228,191 @@ button:hover {
 .dot.active {
   background-color: #ff7a1b;
 }
-
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.card {
+    background: #c81900;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.card h2 {
+    color: #ffa449;
+}
+.two-col, .three-col {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.two-col label, .three-col label {
+    flex: 1;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.note {
+    font-size: 0.8rem;
+    color: #666;
+}
+.radio-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.radio-line input[type="radio"] {
+    margin-right: 10px;
+}
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 0 20px;
+    font-weight: bold;
+}
+.btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover {
+    background: #e65500;
+}
+@media (max-width: 900px) {
+    .form-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    main {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .two-col, .three-col {
+        flex-direction: column;
+    }
+    .nav a {
+        font-size: 2rem;
+        padding: 8px 20px;
+        margin: 5px;
+    }
+}
+.card .radio-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.card .radio-line input[type="radio"] {
+    flex-shrink: 0;
+}
+.card .accepted {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.card input[type="text"],
+.card select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.card .two-col {
+    display: flex;
+    gap: 20px;
+}
+.card .two-col label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.card .three-col {
+    display: flex;
+    gap: 20px;
+}
+.card .three-col label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.card .btn {
+    margin-top: 10px;
+}
+.cart-table-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cart-column {
+    flex: 1;
+}
+.cart-column table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.cart-column th, .cart-column td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+.cart-column .subtotal {
+    font-weight: bold;
+}
+.cart-column input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.cart .total-line {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.cart .note {
+    font-size: 0.85rem;
+    color: #fff;
+    margin-top: 8px;
+}
+@media (max-width: 900px) {
+    .cart-table-container {
+        flex-direction: column;
+    }
+}
